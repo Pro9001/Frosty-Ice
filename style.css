@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://i.ibb.co/SRhyKf6/winter-background-falling-snow-snowy-hills-winter-background-falling-snow-white-snowy-hills-christma.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-weight: bold;
+}
+.galaxy {
+    background-image: url('https://i.ibb.co/F78LPvK/image.png');
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    border: 5px solid yellow;
+    box-shadow: 0 0 20px yellow;
+}
+.coin-anim {
+    position: absolute;
+    font-size: 24px;
+    color: yellow;
+    animation: fadeOut 2s forwards;
+}
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; top: -50px; }
+}
+.balance {
+    margin-bottom: 20px;
+    font-size: 24px;
+    border: 2px solid yellow;
+    padding: 10px;
+    box-shadow: 0 0 20px yellow;
+    color: white;
+}
+.energy {
+    margin-top: 10px;
+    width: 300px;
+    height: 20px;
+    background-color: blue;
+    box-shadow: 0 0 20px blue;
+    position: relative;
+}
+.energy span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.button {
+    background-color: yellow;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid yellow;
+    box-shadow: 0 0 20px yellow;
+}
+.hidden {
+    display: none;
+}
+.rocket, .handshake, .about, .referral {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    cursor: pointer;
+}
+.rocket {
+    background-image: url('https://i.ibb.co/NjZwyvD/cartoon-rocket-space-ship-cartoon-rocket-space-ship-booster-shooting-out-flame-135686581.jpg');
+}
+.handshake, .referral {
+    background-image: url('https://i.ibb.co/BrDLpPt/a-handshake-in-flat-illustration-style-with-gradients-and-white-background-compressed-638ff769-9ade.jpg');
+}
+.about {
+    background-image: url('https://i.ibb.co/Yc3vrk8/About-Us.png');
+}
